@@ -1,0 +1,69 @@
+<doctype>
+<html>
+<head>
+<script language="Javascript"  type="text/javascript">
+Banners = new Array( 'P.jpeg','P1.jpeg','P2.jpeg','P4.jpeg')
+CurrentBanner = 0
+function DisplayBanners()
+{
+ 	if (document.images)
+ 	{
+ 		CurrentBanner++
+ 		if (CurrentBanner == Banners.length) 
+		{
+			CurrentBanner = 0
+ 		}
+ 		document.RotateBanner.src= Banners[CurrentBanner]
+ 		setTimeout("DisplayBanners()",1000)
+ 	}
+ }
+</script>
+</head>
+<body bgcolor="BLACK" text="WHITE" onload="DisplayBanners()"> 
+<form>
+<center>
+<img src="P.jpeg" width="800"  height="300" name="RotateBanner"/>
+</center>
+</form>
+
+<p><h1><center><b>Explore</b></center></h1></p>
+
+ <div>
+            
+       
+ <p><h1><center><b><i> Luxorious and Spacious Rooms</i></b></center></h1></p>  
+   
+<center>  <img src="luxorius.png">
+ 
+ </img></center>
+ </div>  
+
+ <div>
+            
+     
+<p><h1><center><b> <i>Inhouse Spa</i></b></center></h1></p>  
+     
+<center><img src="spahouse.png" >
+</img></center>
+ </div>  
+
+ <div>
+            
+    
+    <p><h1><center><b><i> Swimming Pools</i></b></center></h1></p>  
+  
+  <center> <img src="swimming.png">
+</img></center> 
+ 
+ </div>  
+
+ <div>
+            
+      
+  <p> <h1><center><b><i>Indoor  Game Room</i></b></center></h1></p>  
+  
+ <center>  <img src="play.png" ></center>  
+  
+</div>  
+</body>
+</html>

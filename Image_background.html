@@ -1,0 +1,123 @@
+<!doctype>
+<html>
+<head><title>Background Image</title>
+<script type="text/javascript">
+function validate_form() 
+{
+            if (document.emp.emp_name.value == "") 
+            {
+                	alert("Please fill in the 'Your Employee Name' box.");
+                	return false;
+            }
+            if (document.emp.num.value == "")
+            {
+                  alert("Enter Employee Number");
+                  return false;
+            }
+            alert("sucessfully Submitted");
+           if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/).test(document.emp.email_id.value)) 
+          {
+                alert("You have entered an invalid email address!")
+                return (false)
+            }
+}
+
+function isNumberKey(evt) 
+{
+            var charCode = (evt.which) ? evt.which : event.keyCode;
+            if (charCode != 46 && charCode > 31 && (charCode < 48 || charCode > 57))
+           {
+                alert("Enter Number");
+                return false;
+            }
+            return true;
+}
+</script>
+</head>
+<body background="slider2.gif" text="WHITE">
+<form name="emp"  action=""  onsubmit="return validate_form();"  method="post">
+
+<table align="center" width=50% width="130%" cellspacing="5" cellpadding="4" border="5">
+<tr>
+	<td colspan="2" align="center"><b><h2>Room Booking Form</h2> </b></td>
+ 
+</tr>
+<tr>
+                <td align="left" valign="top" width="41%"><h4>Customer Name</h4><span style="color:red"></span></td>
+                <td width="57%"><input type="text" value="" name="emp_name" size="24"  placeholder="Enter your name"></td>
+</tr>
+<tr>
+                <td align="left" valign="top" width="41%"><h4>Customer Number</h4><span style="color:white"></span></td>
+                <td width="57%">
+                    <input type="text" value="" name="num" onkeypress="return isNumberKey(event)" size="24" placeholder="Enter your number"></td>
+</tr>
+<tr>
+                <td align="left" valign="top" width="41%"><h4>Address</h4></td>
+                 <td width="57%"><textarea rows="4" maxlen="200" name="S2" cols="20" placeholder="Enter your Address"></textarea></td>
+</tr>
+ <tr>
+ 	<td align="left" valign="top" width="41%"><h4>Contact Number</h4></td>
+                    <td width="57%">
+                    <input type="text" value="" onkeypress="return isNumberKey(event)" name="txtFName1" size="24" placeholder="Enter your Contact number"></td>
+</tr>
+<tr>
+                <td align="left" valign="top" width="41%">Rooms</td>
+                <td width="57%"><select name="mydropdown">
+                <option value="Default">Default</option>
+                <option value="Luxury Suite">Luxury Suite</option>
+                <option value="Delux Suite">Delux Suite</option>
+                <option value="Premier Suite">Premier Suite</option>
+                <option value="Luxury Room">Luxury Room</option>
+                <option value="Delux Room">Delux Room</option>
+ </select>
+</td>
+</tr>
+ 
+<tr>
+                <td align="left" valign="top" width="41%"><h4>Facilities</h4></td>
+                <td width="57%">
+                <select name="mydropdown">
+	<option value="Default">Default</option>
+	<option value="Swimming Pools">Swimming Pools</option>
+	<option value=" Indoor  Game Room"> Indoor  Game Room</option>
+	<option value=" Inhouse Spa"> Inhouse Spa</option>
+	<option value="Outdoor Games ">Outdoor Games </option>
+	<option value="Library">Library </option>
+ </select>
+</td>
+</tr>
+
+
+<tr>
+<td align="left" valign="top" width="41%"><h4>Arrival Date</h4><span style="color:white"></span></td>
+ <td width="57%">
+<input type="date" value="date>"
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top" width="41%"><h4>Departure Date</h4><span style="color:white"></span></td>
+ <td width="57%">
+<input type="date" value="date>"
+</td>
+</tr>
+
+ <tr>
+                <td align="left" valign="top" width="41%">Email<span style="color:white"></span></td>
+                <td width="57%">
+                    <input type="text" value="" name="email_id" size="24"></td>
+</tr>
+ 
+<tr>
+                <td colspan="2">
+                    <p align="center">
+                        <input type="submit" value="  Submit" name="B4">
+                        <input type="reset" value="  Reset All   " name="B5"></td>
+</tr>
+
+ 
+        </table>
+    </form>
+</body>
+ 
+</html>

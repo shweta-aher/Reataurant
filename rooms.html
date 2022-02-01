@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>Static Status Bar Message</title>
+<script language="Javascript" type="text/javascript">
+window.status=
+'Rainbowpoint lodge'
+function OpenNewWindow(room) {
+if (room== 1)
+{
+document.cover.src='delux.png'
+MyWindow = window.open('', 'myAdWin', 'titlebar=0,status=0, toolbar=0, location=0, menubar=0,directories=0, resizable=0,height=50, width=150,left=500,top=400')
+MyWindow.document.write(
+'10% Discount for delux room')
+}
+if (room== 2)
+{
+document.cover.src='deluxroom.png'
+MyWindow = window.open('', 'myAdWin', 'titlebar=0,status=0, toolbar=0, location=0, menubar=0,directories=0, resizable=0,height=50, width=150,left=500,top=500')
+MyWindow.document.write(
+'20% Discount for luxarious room')
+}
+if (room== 3)
+{
+document.cover.src='luxury.png'
+MyWindow = window.open('', 'myAdWin',
+'titlebar=0 status=0, toolbar=0, location=0,menubar=0, directories=0, resizable=0,height=50, width=150,left=500,top=600')
+MyWindow.document.write(
+'15% Discount for branded rooms!')
+}
+if (room== 4)
+{
+document.cover.src='luxuryroom.png'
+MyWindow = window.open('', 'myAdWin', 'titlebar=0,status=0, toolbar=0, location=0, menubar=0,directories=0, resizable=0,height=50, width=150,left=500,top=400')
+MyWindow.document.write(
+'10% Discount for Ac room')
+}
+if (room== 5)
+{
+document.cover.src='luxorius.png'
+MyWindow = window.open('', 'myAdWin', 'titlebar=0,status=0, toolbar=0, location=0, menubar=0,directories=0, resizable=0,height=50, width=150,left=500,top=400')
+MyWindow.document.write(
+'10% Discount for non ac room')
+}
+if (room== 6)
+{
+document.cover.src='slider1.jpg'
+MyWindow = window.open('', 'myAdWin', 'titlebar=0,status=0, toolbar=0, location=0, menubar=0,directories=0, resizable=0,height=50, width=150,left=500,top=400')
+MyWindow.document.write(
+'10% Discount for primer room')
+}
+}
+</script>
+</head>
+<body bgcolor="pink">
+<center>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR vAlign=top>
+<TD width=50>
+<a>
+<IMG height="300" src="delux.png" width=300 border=0 name='cover'>
+</a>
+</TD>
+<TD>
+<IMG height=1 src="" width=10>
+</TD>
+<TD>
+<A onmouseover="OpenNewWindow(1)"
+onmouseout="MyWindow.close()">
+<B><U><i><font color="purple" size="5">delux room </font></U></B>
+</A>
+<BR>
+<A onmouseover="OpenNewWindow(2)"
+onmouseout="MyWindow.close()">
+<B><U><font color="purple" size="5">luxurious room</font></U></B>
+</A>
+<BR>
+<A onmouseover="OpenNewWindow(3)"
+onmouseout="MyWindow.close()">
+<B><U><font color="purple" size="5">branded rooms</font></U></B>
+</A>
+<BR>
+<A onmouseover="OpenNewWindow(4)"
+onmouseout="MyWindow.close()">
+<B><U><font color="purple" size="5">Ac room</font></U></B>
+</A>
+<BR>
+<A onmouseover="OpenNewWindow(5)"
+onmouseout="MyWindow.close()">
+<B><U><font color="purple" size="5">non ac rooms</font></U></B>
+</A>
+<BR>
+<A onmouseover="OpenNewWindow(6)"
+onmouseout="MyWindow.close()">
+<B><U><font color="purple" size="5">Primer rooms</font></U></B>
+</A>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+</center>
+</body>
+</html>

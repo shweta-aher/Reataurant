@@ -1,0 +1,70 @@
+<html>
+<head>
+<style>
+h1{background-color:#ADFF2F;}
+</style>
+<script type="text/javascript" language="javascript">
+<!--
+Banners = new Array(
+'slider1.jpg','slider2.jpg','slider3.jpg')
+CurrentBanner = 0
+function DisplayBanners() {
+if (document.images) {
+CurrentBanner++
+if (CurrentBanner == Banners.length) 
+{
+CurrentBanner = 0
+}
+document.RotateBanner.src= Banners[CurrentBanner]
+setTimeout("DisplayBanners()",1000)
+}
+}
+function Alert()
+{
+	alert('Welcome to our rainbowpoint lodge')
+}
+-->
+</script>
+</head>
+<body bgcolor="sky blue" onload="DisplayBanners()">
+<font color="purple" ><h1><u><b><marquee> RAINBOWPOINT LODGE </marquee></b></h1></u></font>
+<center>
+<img src="logo3.png">
+<font color="red" ><h2><i><u><img src="quote-1.png">OUR MOTO IS TO PROVIDE BETTER SERVICE <img src="quote-2.png"></p></h1></h2></i></font>
+</center>
+<center>
+<table border="10">
+<tr>
+<td><button><a href="about_aish.html"><font color="purple" size="5">about</font></a></button></td>
+<td><button><a href="rooms.html"><font color="purple" size="5">Room Information</font></a></button></td>
+<td><button><a href="Expore1_aish.html"><font color="purple" size="5">Explore services</font></a></button></td>
+<td><button><a href="Image_background.html"><font color="purple" size="5">Booking</font></a></button></td>
+<td><button><a href="feedback.html"><font color="purple" size="5">Contact us</font></a></button></td>
+</tr>
+<table>
+</center>
+<center>
+<hr>
+<img src="slider1.jpg" width="1500"
+height="400" name="RotateBanner" />
+<hr>
+<center>
+<table cellspacing="50" border="0">
+
+<tr>
+<td><img src="icon1.png"></td>
+<td><img src="icon2.png"></td>
+<td><img src="icon3.png"></td>
+
+</tr>
+<td><center><font color="purple" size="20">Luxarious</center></font></td>
+<td><center><font color="purple"size="20" >stylish</center></font></td>
+<td><center><font color="purple" size="20">joyful</center></font></td>
+
+<tr>
+
+</table>
+</center>
+</center>
+</body>
+<html>

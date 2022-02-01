@@ -1,0 +1,87 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+function Alert()
+{
+	alert('Welcome to our rainbowpoint lodge')
+}
+function fun1(Element)
+{
+	Element.style.color='red'
+	Element.style.background='lightgreen'
+	Element.style.fontStyle="italic"
+Element.style.fontStyle="Bold"
+	
+}
+function Check(email)
+{
+	with(document.forms.f1)
+	{
+		
+		var location=email.indexOf('@');
+		if(location==-1)
+		{
+			alert('Invalid email id');
+		}
+		else
+		{
+			alert('valid')
+		}
+	}
+}
+function valid()
+{
+	with(document.forms.f1)
+	{
+		var mobile=phno.value
+		var re=/^\(?([0-9]{10})\)?$/
+		if(re.test(mobile))
+		{
+			alert('valid')
+		}
+		else
+		{
+			alert('Invalid')
+		}
+	}
+}
+function Alert1()
+{
+	alert("thanks for your feedback!!")
+}
+</script>
+</head>
+<body background="nature.png" onload="Alert()" onsubmit="Alert1()">
+<form name="f1">
+<font color="yellow" ><h1><u><b><marquee> RAINBOWPOINT LODGE </marquee></b></h1></u></font>
+<center>
+<table cellspacing="10" width="50%" cellpadding="4" border="3" bgcolor="pink">
+<tr>
+<td><font color="purple">Name:<font color="purple"></td>
+<td><input type="text" name="fname" onchange="fun1(this)" size="70"/></td>
+</tr>
+<tr>
+<td><font color="purple">EmailId:</font></td>
+<td><input type="text" name="Email" size="70" onmouseout="Check(this.value)"/></td>
+</tr>
+<tr>
+<td><font color="purple">Mobile No:</font></td>
+<td><input type="text" size="70" name="phno" onblur="valid()"/>
+</td>
+</tr>
+<tr>
+<td><font color="purple">Address:</font></td>
+<td><textarea rows="3" cols="70" name="adr"  required></textarea></td>
+</tr>
+<tr>
+<td><font color="purple">Feedback:</font></td>
+<td><textarea rows="3" cols="70" name="adr1" required></textarea></td>
+</tr>
+</table>
+<table cellspacing=10 border=3 bgcolor="blue">
+<tr><td><center><input type="submit" value="submit" name="submit"></td></tr><center>
+</table>
+</center>
+</form>
+</body>
+</html>
